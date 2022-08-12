@@ -2,19 +2,18 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.example</groupId>
-  <artifactId>maven-jenkins</artifactId>
+  <groupId>org.example</groupId>
+  <artifactId>maven_jenkins</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>maven-jenkins</name>
+  <name>maven_jenkins</name>
   <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    
   </properties>
 
   <dependencies>
@@ -25,24 +24,25 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
   <build>
-  <finalName>jenkins</finalName>
-  <pluginManagement>
-  <plugins>
-  	<plugin>
-  		<groupId>org.apache.maven.plugins</groupId>
-  		<artifactId>maven-jar-plugin</artifactId>
-  		<version>3.2.0</version>
-  		<configuration>
-  		<archieve>
+<finalName>jenkins</finalName>
+<pluginManagement>
+
+<plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-jar-plugin</artifactId>
+<version>3.2.0</version>
+<configuration>
+<archive>
 <manifest>
 <mainClass>com.example.App</mainClass>
 </manifest>
-</archieve>
-
-  		</configuration>
-  	</plugin>
-  </plugins>
-  </pluginManagement>
-  </build>
+</archive>
+</configuration>
+</plugin>
+</plugins>
+</pluginManagement>
+</build>
 </project>
